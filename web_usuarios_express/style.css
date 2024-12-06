@@ -1,0 +1,133 @@
+/* --- Importar fuentes --- */
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
+/* --- Estilos generales --- */
+*{
+    font-family: "Inter", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    margin: 0;
+}
+
+/* --- Estilos para la cabecera --- */
+header{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 15vh;
+    background-color: rgb(190, 135, 222);
+    color: white;
+}
+
+header p{
+    font-size: 30px;
+    background-color: rgb(190, 135, 222);
+    margin-right: 4%;
+}
+
+header button{
+    padding: 1%;
+    border-radius: 5px;
+    border: solid 2px rgb(135, 0, 169);
+    background-color: rgb(175, 133, 206);
+    color: white;
+    cursor: pointer;
+}
+
+header .searchuser{
+    display: flex;
+    width: 20%;
+    gap: 5%;
+    height: 6.5vh;
+}
+
+header .searchuser #searchbar{
+    width: 10vw;
+    text-align: center;
+    border-radius: 5px;
+}
+
+/* --- Estilos para el contenido --- */
+.content{
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    gap: 3%;
+    justify-content: center;
+    align-items: center;
+}
+
+.card{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* border: solid 1px black; */
+    width: 20%;
+    margin-top: 1.5%;
+    margin-bottom: 1.5%;
+    border-radius: 2px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.userid{
+    font-size: 25px;
+    margin-bottom: 7.5%;
+    margin-top: 7.5%;
+    font-variant: small-caps;
+}
+
+.usernameandsurname{
+    font-size: 20px;
+    margin-bottom: 7.5%;
+    font-weight: 550;
+}
+
+.userphone{
+    font-size: 20px;
+    margin-bottom: 7.5%;
+}
+
+/* --- Estilos para el modal --- */
+.modal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+}
+
+.hidden {
+    display: none;
+}
+
+.modal-content {
+    background: white;
+    padding: 20px;
+    border-radius: 8px;
+    text-align: center;
+    width: 300px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.modal-content input {
+    width: 80%;
+    margin: 10px 0;
+    padding: 8px;
+}
+
+.modal-content button {
+    margin: 10px 5px;
+    padding: 10px 20px;
+    border: none;
+    background-color: rgb(175, 133, 206);
+    border: solid 2px rgb(135, 0, 169);
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+}

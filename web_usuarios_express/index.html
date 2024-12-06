@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+    <head>
+
+        <meta charset = "UTF-8">
+        <meta name = "viewport" content = "width=device-width, initial-scale=1.0">
+        <title>API Express - Adriano</title>
+        <link rel = "stylesheet" href = "style.css">
+
+    </head>
+
+    <body>
+
+        <header>
+
+            <button id = "adduser">Agregar Usuario</button>
+
+            <button id = "showall">Mostrar Todos</button>
+
+            <p class = "title">Lista de Usuarios de Adriano SL</p>
+
+            <div class = "searchuser">
+
+                <input type = "text" id = "searchbar" placeholder = "Introduce un ID">
+                <button id = "searchuser">Buscar por ID</button>
+
+            </div>
+            
+
+        </header>
+
+        <div class = "content">
+
+            <!-- Aquí van las cartas recuperadas con AJAX -->
+
+        </div>
+
+        <div id = "modal" class = "modal hidden">
+
+            <div class = "modal-content">
+
+                <h2>Agregar Usuario</h2>
+
+                <label for = "name">Nombre:</label>
+                <input type = "text" id = "name" placeholder = "Nombre">
+
+                <label for = "lastname">Apellido:</label>
+                <input type = "text" id = "surname" placeholder = "Apellido">
+
+                <label for = "phone">Teléfono:</label>
+                <input type = "text" id = "phone" placeholder = "Teléfono">
+
+                <button id = "saveuser">Guardar Usuario</button>
+                <button id = "closemodal">Cerrar</button>
+
+            </div>
+
+        </div>
+        
+        <script src = "https://code.jquery.com/jquery-3.7.1.min.js"></script>
+        <script src = "main.js"></script>
+
+    </body>
+
+</html>
